@@ -14,14 +14,22 @@ module.exports = defineConfig({
     },
     redisUrl: process.env.REDIS_URL,
   },
-  plugins: [
+  modules: [
     {
-      resolve: `medusa-events-webhooks`,
-      options: {
-        enableUI: true,
-        TOKEN_SECRET: 'JrKSQgmXc7FUg7FyWeTK',
-        MAX_RETRY_COUNT: 5,
+      resolve: "@medusajs/medusa/event-bus-redis",
+      options: { 
+        redisUrl: process.env.EVENTS_REDIS_URL,
       },
     },
   ],
+  // plugins: [
+  //   {
+  //     resolve: `medusa-events-webhooks`,
+  //     options: {
+  //       enableUI: true,
+  //       TOKEN_SECRET: 'JrKSQgmXc7FUg7FyWeTK',
+  //       MAX_RETRY_COUNT: 5,
+  //     },
+  //   },
+  // ],
 })
