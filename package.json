@@ -13,7 +13,7 @@
     "medusa"
   ],
   "scripts": {
-    "build": "medusa build",
+    "build": "medusa build && ln -s .medusa/server/public/ public",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start": "medusa start",
     "dev": "medusa develop",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@medusajs/admin-sdk": "2.5.1",
     "@medusajs/cli": "2.5.1",
+    "@medusajs/event-bus-redis": "^2.5.1",
     "@medusajs/framework": "2.5.1",
     "@medusajs/medusa": "2.5.1",
     "@mikro-orm/core": "6.4.3",
@@ -31,6 +32,7 @@
     "@mikro-orm/migrations": "6.4.3",
     "@mikro-orm/postgresql": "6.4.3",
     "awilix": "^8.0.1",
+    "medusa-events-webhooks": "^1.1.5",
     "pg": "^8.13.0"
   },
   "devDependencies": {
