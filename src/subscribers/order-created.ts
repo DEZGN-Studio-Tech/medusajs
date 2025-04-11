@@ -4,6 +4,7 @@ import type {
   } from "@medusajs/framework"
 
 import axios from "axios"
+import { OrderService } from "@medusajs/medusa"
 
 export default async function orderPlacedHandler({
   event: { data },
