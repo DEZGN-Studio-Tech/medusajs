@@ -32,4 +32,8 @@ module.exports = defineConfig({
   //     },
   //   },
   // ],
+  const plugins = [
+    // ...
+    `medusa-payment-manual`
+  ]
 })

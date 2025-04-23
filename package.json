@@ -33,6 +33,7 @@
     "@mikro-orm/postgresql": "6.4.3",
     "awilix": "^8.0.1",
     "medusa-events-webhooks": "^1.1.5",
+    "medusa-payment-manual": "^1.0.25",
     "pg": "^8.13.0"
   },
   "devDependencies": {
