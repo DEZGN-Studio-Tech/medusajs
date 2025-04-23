@@ -21,21 +21,21 @@ module.exports = defineConfig({
         redisUrl: process.env.EVENTS_REDIS_URL,
       },
     },
-    {
-      resolve: "@medusajs/medusa/payment",
-      options: {
-        providers: [
-          {
-            // if module provider is in a plugin, use `plugin-name/providers/my-payment`
-            resolve: "./src/modules/my-payment",
-            id: "my-payment",
-            options: {
-              // provider options...
-            }
-          }
-        ]
-      }
-    }
+    // {
+    //   resolve: "@medusajs/medusa/payment",
+    //   options: {
+    //     providers: [
+    //       {
+    //         // if module provider is in a plugin, use `plugin-name/providers/my-payment`
+    //         resolve: "./src/modules/my-payment",
+    //         id: "my-payment",
+    //         options: {
+    //           // provider options...
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }
     // {
     //   resolve: "./src/modules/my-payment",
     // },

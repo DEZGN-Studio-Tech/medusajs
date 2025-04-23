@@ -95,7 +95,7 @@ class MyPaymentProviderService extends AbstractPaymentProvider<Options> {
         amount,
         currency_code,
         customer: customerDetails
-      }
+      },
     }
   }
 
