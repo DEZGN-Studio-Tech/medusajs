@@ -40,6 +40,9 @@ module.exports = defineConfig({
     //   resolve: "./src/modules/my-payment",
     // },
   ],
+  admin: {
+    disable: process.env.DISABLE_MEDUSA_ADMIN === "true",
+  },
   // plugins: [
   //   {
   //     resolve: `medusa-events-webhooks`,
