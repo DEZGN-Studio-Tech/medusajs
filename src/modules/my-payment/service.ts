@@ -32,6 +32,7 @@ type InjectedDependencies = {
 }
 
 class MyPaymentProviderService extends AbstractPaymentProvider<Options> {
+    static identifier = "my-payment"
     protected logger_: Logger
     protected options_: Options
   
