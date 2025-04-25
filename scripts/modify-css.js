@@ -10,20 +10,16 @@ const __dirname = dirname(__filename);
 const targetDir = '/app/public/admin/assets';
 
 const cssAdditions = `
-.font-sans.font-medium.h1-core {
-    position: relative;
-    width: calc(100% - 8ch);  /* reduce width by 4 characters */
-    overflow: hidden;
-    text-indent: 0;
-    white-space: nowrap;
+#medusa > div > div > div.mb-4.flex.flex-col.items-center > h1{
+  position: relative;
+  width: calc(100% - 8ch);  /* reduce width by 4 characters */
+  overflow: hidden;
+  text-indent: 0;
+  white-space: nowrap;
 }
 
-div[class*="bg-ui-bg-field"][class*="text-ui-fg-subtle"][class*="flex"][class*="items-center"][class*="justify-center"][class*="size-12"][class*="size-11"][class*="rounded-[10px]"][class*="bg-ui-button-neutral"] {
-  display: none;
-}
-
-.font-normal.font-sans.txt-small.text-ui-fg-subtle.text-center {
-  display: none;
+#medusa > div > div > div.mb-4.flex.flex-col.items-center > p {
+display: none;
 }
 
 div[class*="bg-ui-bg-field"][class*="text-ui-fg-subtle"][class*="flex"][class*="items-center"][class*="justify-center"][class*="size-12"][class*="size-11"][class*="rounded-[10px]"][class*="bg-ui-button-neutral"][class*="shadow-buttons-neutral"][class*="after:button-neutral-gradient"][class*="relative"][class*="mb-4"][class*="h-[50px]"][class*="w-[50px]"][class*="rounded-xl"][class*="after:inset-0"][class*="after:content-['']"] {
@@ -31,15 +27,15 @@ div[class*="bg-ui-bg-field"][class*="text-ui-fg-subtle"][class*="flex"][class*="
 }
 
 a[href="https://docs.medusajs.com"] {
-  display: none;
+display: none;
 }
 
 a[href="https://medusajs.com/changelog/"] {
-  display: none;
+display: none;
 }
 
 .text-ui-fg-muted.txt-small.my-6:has(a[href*="app/reset-password"]) {
-  display: none;
+display: none;
 }
 `;
 
