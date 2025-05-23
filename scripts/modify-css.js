@@ -10,9 +10,9 @@ const __dirname = dirname(__filename);
 const targetDir = '/app/public/admin/assets';
 
 const cssAdditions = `
-#medusa > div > div > div.mb-4.flex.flex-col.items-center > h1{
+#medusa > div > div > div > div.mb-4.flex.flex-col.items-center > h1{
   position: relative;
-  width: calc(100% - 8ch);  /* reduce width by 4 characters */
+  width: calc(100% - 11ch);  /* reduce width by 4 characters */
   overflow: hidden;
   text-indent: 0;
   white-space: nowrap;
