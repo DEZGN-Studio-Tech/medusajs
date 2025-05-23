@@ -4,7 +4,11 @@
 /uploads
 /node_modules
 yarn-error.log
+<<<<<<< HEAD
 /public
+=======
+
+>>>>>>> 1cdfd460b3bf867d40c2575600237453b0355ace
 .idea
 
 coverage
