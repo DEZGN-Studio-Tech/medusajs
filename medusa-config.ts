@@ -13,7 +13,6 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
     redisUrl: process.env.REDIS_URL,
-<<<<<<< HEAD
     redisPrefix: process.env.REDIS_NAMESPACE,
   },
   modules: [
@@ -41,14 +40,6 @@ module.exports = defineConfig({
             },
           },
         ],
-=======
-  },
-  modules: [
-    {
-      resolve: "@medusajs/medusa/event-bus-redis",
-      options: { 
-        redisUrl: process.env.EVENTS_REDIS_URL,
->>>>>>> 1cdfd460b3bf867d40c2575600237453b0355ace
       },
     },
     // {
@@ -70,20 +61,4 @@ module.exports = defineConfig({
     //   resolve: "./src/modules/my-payment",
     // },
   ],
-<<<<<<< HEAD
-=======
-  admin: {
-    disable: process.env.DISABLE_MEDUSA_ADMIN === "true",
-  },
-  // plugins: [
-  //   {
-  //     resolve: `medusa-events-webhooks`,
-  //     options: {
-  //       enableUI: true,
-  //       TOKEN_SECRET: 'JrKSQgmXc7FUg7FyWeTK',
-  //       MAX_RETRY_COUNT: 5,
-  //     },
-  //   },
-  // ],
->>>>>>> 1cdfd460b3bf867d40c2575600237453b0355ace
 })
